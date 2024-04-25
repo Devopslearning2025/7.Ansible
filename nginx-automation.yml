@@ -1,6 +1,5 @@
 - name: nginx install start configure and restart
   hosts: web
-  #register: cleanup
   become: yes
   tasks:
   - name: installing nginx
@@ -13,15 +12,8 @@
       state: started
       enabled: yes
   - name: removing the default files
-    file:
-      path: /usr/share/nginx/html/
+    ansible.builtin.file:
       state: absent
-      with_items: "{{ out.files }}"
-  loop_control:
-    label: "{{ item.path }}"
-
-   # ansible.builtin.file:
-    #  state: absent
-      #path: /usr/share/nginx/html/
-     # with.items: "{{ cleanup.files }}"
-      #register: out
+      path: /usr/share/nginx/html/
+      with.items: "{{ cleanup.files }}"
+      register: out
