@@ -1,6 +1,7 @@
 - name: nginx install start configure and restart
   hosts: web
   become: yes
+  register: cleanup
   tasks:
   - name: installing nginx
     ansible.builtin.dnf:
