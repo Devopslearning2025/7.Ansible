@@ -1,5 +1,6 @@
 - name: nginx install start configure and restart
   hosts: web
+  register: cleanup
   become: yes
   tasks:
   - name: installing nginx
