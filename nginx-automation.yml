@@ -24,6 +24,4 @@
     #  state: absent
       #path: /usr/share/nginx/html/
      # with.items: "{{ cleanup.files }}"
-      #register: out 
-  - debug:
-      var: out
+      #register: out
