@@ -2,5 +2,4 @@
   hosts: web
   tasks:  #list of tasks/modules/collections
     - name: "pinging the server"
-      ping
-
+      ansible-builtin.ping:
