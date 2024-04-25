@@ -1,8 +1,8 @@
 - name: nginx install start configure and restart
   hosts: web
-  #register: cleanup
+  register: cleanup
   become: yes
-    tasks:
+  tasks:
   - name: installing nginx
     ansible.builtin.dnf:
       name: nginx
@@ -16,7 +16,7 @@
     ansible.builtin.file:
       state: absent
       path: /usr/share/nginx/html/
-      #with.items: "{{ cleanup.files }}"
-      register: out 
+      with.items: "{{ cleanup.files }}"
+      #register: out 
   - debug:
       var: out
