@@ -5,6 +5,10 @@
   - name: installing nginx
     ansible.builtin.dnf:
       name: nginx
+      state: latest
+  - name: starting nginx
+    ansible.builtin.server:
+      name: nginx
       state: started
       enabled: yes
   - name: removing the default files
