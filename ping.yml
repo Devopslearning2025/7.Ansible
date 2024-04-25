@@ -1,7 +1,0 @@
-- name  "pining the server"
-  host=web
-  becomes=yes
-  tasks:
-    - name: "pinging the server"
-      ping
-
