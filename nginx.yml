@@ -1,6 +1,6 @@
 - name: installing nginx
   hosts: web
-  become= yes
+  become: yes
   tasks: #
   -name: "Installing the nginx"
   ansible.builtin.dnf:
