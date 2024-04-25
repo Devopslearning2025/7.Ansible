@@ -2,12 +2,12 @@
   hosts: web
   become: yes
   tasks:
-   -name: installing nginx
+  - name: installing nginx
     ansible.builtin.dnf:
       name: nginx
       state: started
       enabled: yes
-  -name: removing the default files
-   ansible.builtin.file:
+  - name: removing the default files
+    ansible.builtin.file:
       state: absent
       path: /usr/share/nginx/html
