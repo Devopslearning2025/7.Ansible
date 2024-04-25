@@ -1,4 +1,4 @@
-- name = "pining the server"
+- name  "pining the server"
   host=web
   becomes=yes
   tasks:
