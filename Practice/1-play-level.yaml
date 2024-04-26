@@ -1,0 +1,10 @@
+- name: Play Level variable declaration
+  hosts: localhost
+  vars:
+    course: Ansible
+    name: Ram
+    type: online
+  tasks:
+    - name: Printing the info
+      debug:
+        msg: Hey i am lerning {{course}} from trainer {{name}} basics from {{type}}
