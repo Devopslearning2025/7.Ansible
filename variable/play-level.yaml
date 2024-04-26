@@ -3,6 +3,7 @@
   vars:
     course: Ansible
     name: shiva
+    type: online
     duration: 120
   tasks:
     - name: Printing some information
