@@ -1,7 +1,7 @@
 - name: Play Level variable declaration
   hosts: localhost
   vars:
-    couorse: Ansible
+    course: Ansible
     name: Ram
     type: online
   tasks:
