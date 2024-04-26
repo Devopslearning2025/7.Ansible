@@ -10,4 +10,4 @@
   tasks:
     - name: PLAY 2 TASK 2
       ansible.buitin.debug:
-        msg: "H"ello I am PLAY 2 Task 1"
+        msg: "Hello I am PLAY 2 Task 1"
