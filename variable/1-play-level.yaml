@@ -1,0 +1,6 @@
+- name: Play Level variable declaration
+  hosts: localshot
+  tasks:
+    - name: Printing the info
+      debug:
+        msg: "Hey i am lerning Ansible from basics"
