@@ -1,0 +1,11 @@
+- name: Variables
+  hosts: localhost
+  vars: #variable declaration
+    Course: Ansible
+    type: online
+    Duration: 120
+
+  tasks:
+    - name: Print the information
+      ansible.builtin.debug:
+        msg: "We are Leaning {{copurse}} from {{type}} class duraion of {{Duration}} Hours"
