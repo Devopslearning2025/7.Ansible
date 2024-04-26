@@ -7,4 +7,4 @@
   tasks:
     - name: Printing the info
       debug:
-        msg: "Hey i am lerning {[course]} from trainer {{name}} basics from {{type}}
+        msg: "Hey i am lerning {{course}} from trainer {{name}} basics from {{type}}
