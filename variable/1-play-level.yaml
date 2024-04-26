@@ -3,4 +3,4 @@
   tasks:
     - name: Printing the info
       debug:
-        msg: "Hey i am lerning Ansible from basics"
+        msg: "Hey i am lerning Ansible from basics from play level"
