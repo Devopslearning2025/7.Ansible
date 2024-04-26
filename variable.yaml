@@ -8,4 +8,4 @@
   tasks:
     - name: Print the information
       ansible.builtin.debug:
-        msg: "We are Leaning {{copurse}} from {{type}} class duraion of {{Duration}} Hours"
+        msg: "We are Leaning {{course}} from {{type}} class duraion of {{Duration}} Hours"
