@@ -1,5 +1,5 @@
 - name: Play Level variable declaration
-  hosts: localshot
+  hosts: localhost
   tasks:
     - name: Printing the info
       debug:
