@@ -1,6 +1,6 @@
 - name: Play Level variable
   hosts: localhost
-  var:
+  vars:
     course: Ansible
     name: shiva
     duration: 120
