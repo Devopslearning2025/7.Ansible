@@ -1,0 +1,5 @@
+---
+  credentials:
+    web:
+      username: ec2-user
+      password: DevOps321
