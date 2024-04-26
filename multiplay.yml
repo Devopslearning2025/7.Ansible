@@ -11,3 +11,10 @@
     - name: PLAY 2 TASK 2
       ansible.builtin.debug:
         msg: "Hello I am PLAY 2 Task 1"
+
+- name: This is Play 3
+  hosts: localhost
+  tasks:
+    - name: lay 3 TASK 1
+      ansible.builtin.debug:
+        msg: "Hello This is Play 3 Task 1"        
