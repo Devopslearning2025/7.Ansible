@@ -1,11 +1,13 @@
 - name: Giving Variables from Prompt
-  hosts:
+  hosts: localhost
   vars_prompt:
   - name: USERNAME
     prompt: Please Enter your name
-  - age: USERAGE
+    private: false
+  - name: Age
     prompt: Enter user age
-  - occupation: WORK
+    private: true
+  - name: occupation
     prompt: Enter user oaacupation
   tasks:
     - name: Printing info from User Prompt
