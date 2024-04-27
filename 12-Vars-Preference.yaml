@@ -5,10 +5,10 @@
     Wishes: Morning from Play Level
   vars_files:
   -  vars.yaml    
-  vars_prompt:
-  - name: Wishes
-    prompt: Enter wishes
-    private: false
+  #vars_prompt:
+  #- name: Wishes
+  #  prompt: Enter wishes
+  #  private: false
   tasks:
     - name: checking Vars preferences
       vars:
@@ -16,4 +16,5 @@
       debug:
         msg: "Hello Ramesh, Good {{Wishes}}"     
 
-#Arguments
+#Arguments Level
+#Task level
