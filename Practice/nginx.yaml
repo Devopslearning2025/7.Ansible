@@ -12,13 +12,10 @@
         name: nginx
         state: started
 
-    - name: startg nginx
-      service:
-        name: nginx
-        state: started     
     - name: removing the default files
-      ansible.builtin.command: rm /usr/share/nginx/html/*
+      ansible.builtin.command: rm -rf /usr/share/nginx/html/*
       register: remove
+
     - name: checking the rm command results
       debug:
         msg: "{{remove}}"
