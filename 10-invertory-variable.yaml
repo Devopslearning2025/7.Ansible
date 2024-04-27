@@ -2,6 +2,8 @@
   hosts: localhost
   tasks:
   - name: printing info
+    vars:
+      Timings: "7:15 AM IST"
     debug: 
       msg: "I am Learning {{Course}} from {{Name}} with {{Duration}} of hours
       timing are {{Timings}}"
