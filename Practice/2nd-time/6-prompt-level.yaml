@@ -12,5 +12,5 @@
   tasks:
     - name: Printing info from User Prompt
       debug:
-        msg: "My Name is {{USERNAME}}, having {{USERAGE}} and working as a {{WORK}}"
+        msg: "My Name is {{USERNAME}}, having {{Age}} and working as a {{occupation}}"
      
