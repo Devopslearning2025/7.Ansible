@@ -1,0 +1,14 @@
+- name: testing multi level play
+  hosts: localhost
+  tasks:
+    - name: PLAY 1 TASK 1
+      ansible.builtin.debug:
+        msg: "This is PLAY 1 TASK 1"
+
+- name: testing multi level play
+  hosts: localhost
+  tasks:
+    - name: PLAY 2 TASK 1
+      ansible.builtin.debug:
+        msg: "This is PLAY 2 TASK 1"
+
