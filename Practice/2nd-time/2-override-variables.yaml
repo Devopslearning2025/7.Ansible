@@ -1,6 +1,6 @@
 - name: Override variable
   hosts: localhost
-  vars:
+  vars: #Variable declaration
     Name: Ramesh
     Age: 32
     Occupation: Engineer
@@ -10,7 +10,7 @@
         msg: "My Name is {{Name}}, having {{Age}} years and working an {{Occupation}}"
     
     - name: override Variables
-      vars:
+      vars: #Task level
         Occupation: "Devops Engineer"
       debug:
         msg: "My Name is {{Name}}, having {{Age}} years and working an {{Occupation}} "

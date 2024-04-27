@@ -1,0 +1,6 @@
+- name: Declaring Variables at inventory level
+  hosts: localhost
+  tasks:
+    - name: Printing Variable Info from inventory
+      debug:
+        msg: "My Name is {{Name}}, I am {{Age}} years old and i am working an {{occupation}} "
