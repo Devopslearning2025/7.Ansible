@@ -8,6 +8,6 @@
     prompt: Enter your password    
     private: true
   tasks:
-    -name: printing info
-    debug:
-      msg: I am my name is {{username}} and my {{password}}
+    - name: printing info
+      debug:
+        msg: I am my name is {{username}} and my {{password}}
