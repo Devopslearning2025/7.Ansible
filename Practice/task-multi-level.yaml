@@ -6,12 +6,12 @@
     type: online
     duration: 120
   tasks:
-    - name: printing info
+    - name: printing info from play level
       vars:
         course: Terraform
       debug:
         msg: i am learning {{course}} from trainer {{guide}} by {{type}} with {{duration}} of hours
 
-    - name: printing info
+    - name: printing info from task level
       debug:
         msg: i am learning {{course}} from trainer {{guide}} by {{type}} with {{duration}} of hours
