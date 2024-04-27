@@ -1,0 +1,16 @@
+- name: Override variable
+  hosts: localhost
+  vars:
+    Name: Ramesh
+    Age: 32
+    Occupation: Engineer
+  tasks:
+    - name: Play level variable
+      debug:
+        msg: "My Name is {{Name}}, having {{Age}} years and working an {{Occupation}}"
+    
+    - name: override Variables
+      vars:
+        Occupation: Devops
+      debug:
+        msg: "My Name is {{Name}}, having {{Age}} years and working an {{Occupation}}"
