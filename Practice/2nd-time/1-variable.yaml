@@ -7,4 +7,4 @@
   tasks:
     - name: Printing info from Play Level variable
       debug: 
-        msg: " I am {{name}},  i am {{Age}} old and i am {{occupation}} "
+        msg: " I am {{name}},  i am {{Age}} year old and i am working as an {{occupation}} "
