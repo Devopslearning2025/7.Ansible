@@ -11,6 +11,6 @@
     
     - name: override Variables
       vars:
-        Occupation: Devops
+        Occupation: "Devops Engineer"
       debug:
-        msg: "My Name is {{Name}}, having {{Age}} years and working an {{Occupation}}"
+        msg: "My Name is {{Name}}, having {{Age}} years and working an {{Occupation}} "
