@@ -1,0 +1,17 @@
+- name: Writing data types
+  hosts: localhost
+  vars:
+    course: Devops with AWS #string
+    Tools: #list
+    - linux
+    - shell
+    - Ansible
+    Expereience: #Maps or Dc=ictoionary
+      Devops: 3
+      Aws: 2
+      Docker: 2
+    RealProject: Yes # Boolean
+  tasks:
+    - name: Printing the info from data types
+      ansible.builtin.debug:
+        msg: "Iam Learning {{course}} course with tools {{Tools}} and having expereince of {{Expereience}} with  RealProject{{RealProject}}"

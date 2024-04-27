@@ -16,5 +16,9 @@
       debug:
         msg: "Hello Ramesh, Good {{Wishes}}"     
 
-#Arguments Level
-#Task level
+#1. Arguments Level
+#2. Task level
+#3. Variable from files
+#4. Prompt level
+#5. Play Level
+#6. Inventory Level
