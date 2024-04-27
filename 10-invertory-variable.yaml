@@ -3,4 +3,4 @@
   tasks:
     - name: printing info
       debug:
-        msg: I am Learning {{Course}} from {{Name}} with {{Duration}} of hours
+        msg: "I am Learning {{Course}} from {{Name}} with {{Duration}} of hours"
