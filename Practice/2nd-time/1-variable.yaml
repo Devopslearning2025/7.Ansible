@@ -1,5 +1,5 @@
 - name: Play Level variable
-  hosts:
+  hosts: localhost
   vars:
     name: Ramesh
     Age: 32
