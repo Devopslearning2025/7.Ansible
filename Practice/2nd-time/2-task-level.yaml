@@ -1,0 +1,10 @@
+- name: Declaring Variable at task levewl
+  hosts: localhost
+  tasks:
+    - name: Declaring value at Tasks level
+      vars:
+        Name: Ramesh
+        Age: 32
+        occupation: Engineer
+      debug:
+        msg: "I am {{Name}}, i am {{Age}} old and working as an {{occupation}}"
