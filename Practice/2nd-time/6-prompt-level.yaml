@@ -1,0 +1,14 @@
+- name: Giving Variables from Prompt
+  hosts:
+  vars_prompt:
+  - name: USERNAME
+    prompt: Please Enter your name
+  - age: USERAGE
+    prompt: Enter user age
+  - occupation: WORK
+    prompt: Enter user oaacupation
+  taks:
+    - name: Printing info from User Prompt
+      debug:
+        msg: "My Name is {{USERNAME}}, having {{USERAGE}} and working as a {{WORK}}"
+     
