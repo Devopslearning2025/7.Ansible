@@ -1,6 +1,6 @@
 - name: mutiple task level
   hosts: localhost
-  taks:
+  tasks:
     - name: printing info
       vars:
         course: Ansible
