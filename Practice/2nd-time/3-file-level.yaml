@@ -1,6 +1,6 @@
 - name: Declaring VAriables at file level
   hosts: localhost
-  vars_file:
+  vars_files:
   - files.yaml
   tasks:
     - name: Variable Values are coming from file
