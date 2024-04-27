@@ -1,0 +1,12 @@
+- name: Installing and starting nginx
+  hosts: localhost
+  become: yes
+  tasks:
+    - name: Installing nginx
+      dnf:  
+        name: nginx 
+        state: latest
+    - name: startg nginx
+      service:
+        name: nginx
+        state: started
