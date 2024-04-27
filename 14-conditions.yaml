@@ -4,3 +4,4 @@
   tasks:
     - name: Printin guser info
       ansible.builtin.command: id ram
+      ignore_errors: true
