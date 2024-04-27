@@ -1,0 +1,10 @@
+- name: Play Level variable
+  hosts:
+  vars:
+    name: Ramesh
+    Age: 32
+    occupation: Engineer
+  tasks:
+    - name: Printing info from Play Level variable
+      debug: 
+        msg: " I am {{name}},  i am {{Age}} old and i am {{occupation}} "
