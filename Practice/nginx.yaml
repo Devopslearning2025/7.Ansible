@@ -21,4 +21,4 @@
       register: remove
     - name: checking the rm command results
       debug:
-        msg: {{remove}}
+        msg: "{{remove}}"
