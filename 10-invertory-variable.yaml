@@ -1,0 +1,6 @@
+- name: Writing inventory level variable
+  hosts: localhost
+  tasks:
+    - name: printing info
+      debug:
+        msg: I am Learning {{course}} from {{trainer}} with {{duration}} of hours

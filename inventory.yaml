@@ -7,6 +7,14 @@
 172.31.81.187
 172.31.81.186
 
+[localhost]
+localhost
+
+[localhost:vars]
+course="Deops with AWS"
+trainer="SHiva"
+duraion="120"
+
 [app]
 172.31.81.183
 172.31.81.184
