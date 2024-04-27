@@ -1,8 +1,8 @@
 - name: Checking Vars Preferences
   hosts: localhost
-  vars:
-    Name: Ramesh
-    Wishes: Morning from Play Level
+  #vars:
+   # Name: Ramesh
+   # Wishes: Morning from Play Level
   #vars_files:
   #-  vars.yaml    
  # vars_prompt:
