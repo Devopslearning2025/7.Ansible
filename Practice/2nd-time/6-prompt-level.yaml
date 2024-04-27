@@ -7,7 +7,7 @@
     prompt: Enter user age
   - occupation: WORK
     prompt: Enter user oaacupation
-  taks:
+  tasks:
     - name: Printing info from User Prompt
       debug:
         msg: "My Name is {{USERNAME}}, having {{USERAGE}} and working as a {{WORK}}"
