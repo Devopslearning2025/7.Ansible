@@ -1,0 +1,8 @@
+- name: Declaring VAriables at file level
+  hosts: localhost
+  vars_file:
+  - files.yaml
+  tasks:
+    - name: Variable Values are coming from file
+      debug:
+        msg: "My Name is {{Name}}, I am {{Age}} years old and i am working an {{occupation}} "
