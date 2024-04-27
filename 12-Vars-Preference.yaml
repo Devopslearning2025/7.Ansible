@@ -7,11 +7,13 @@
   -  vars.yaml    
   vars_prompt:
   - name: Wishes
-    prompt: Enter your name
+    prompt: Enter wishes
     private: false
   tasks:
-    - name: Prinigng Variable info
+    - name: checking Vars preferences
       vars:
         Wishes: Morning from task level
       debug:
         msg: "Hello Ramesh, Good {{Wishes}}"     
+
+#Arguments
