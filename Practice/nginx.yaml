@@ -12,10 +12,11 @@
         name: nginx
         state: started
 
-    - name: removing the default files
-      ansible.builtin.command: rm -rf /usr/share/nginx/html/*
-      register: remove
+#    - name: removing the default files
+#      ansible.builtin.command: rm -rf /usr/share/nginx/html/*
+#      register: remove
+    - name:  removing the default files
+      ansible.builtin.file:
+        path: /usr/share/nginx/html/
+        state: absent
 
-    - name: checking the rm command results
-      debug:
-        msg: "{{remove}}"
