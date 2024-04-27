@@ -11,9 +11,9 @@
 localhost
 
 [localhost:vars]
-course="Deops with AWS"
-trainer="SHiva"
-duraion="120"
+Course="Devops with AWS"
+Name="Shiva"
+Duration="120"
 
 [app]
 172.31.81.183
