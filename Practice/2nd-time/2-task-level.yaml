@@ -7,4 +7,4 @@
         Age: 32
         occupation: Engineer
       debug:
-        msg: "I am {{Name}}, i am {{Age}} old and working as an {{occupation}}"
+        msg: "I am {{Name}}, i am {{Age}} years old and working as an {{occupation}}"
