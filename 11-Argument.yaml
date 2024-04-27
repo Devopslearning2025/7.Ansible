@@ -1,0 +1,6 @@
+- name: Declaring variable from argument
+  hosts: localhost
+  tasks:
+  - name: Pringing info from Arguments
+    debug:
+      msg: Hello {{NAME}} , Good {{WISHES}}
