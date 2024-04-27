@@ -1,0 +1,11 @@
+- name: mutiple task level
+  hosts: localhost
+  taks:
+    - name: printing info
+      vars:
+        name: Ansible
+        guide: shive
+        type: online
+        duration: 120
+      debug:
+        msg: i am learning {{name}} from trainer {{guide}} by {{type}} with {{duration}} of hours
