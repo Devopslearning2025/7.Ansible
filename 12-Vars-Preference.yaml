@@ -11,8 +11,8 @@
   #  private: false
   tasks:
     - name: checking Vars preferences
-      vars:
-        Wishes: Morning from task level
+      #vars:
+      #  Wishes: Morning from task level
       debug:
         msg: "Hello Ramesh, Good {{Wishes}}"     
 
