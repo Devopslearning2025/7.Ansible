@@ -8,4 +8,15 @@
   tasks:
     - name: Printing some information
       debug:
-        msg: I am learning {{course}} in {{type}} from trainer {{name}} with {{duration}} of hours
+        msg: I am learning {{course}} in {{type}} from trainer {{name}} with {{duration}} hours
+
+- name: Play level variable 2
+  hosts: localhost
+  vars:
+    name: Ansible
+    trainee: shive
+    time: 120
+  tasks:
+    - name: print info
+      debug:
+        msg: I am learning {{name}} course from trainer {{name}} with {{time}} hours duration
