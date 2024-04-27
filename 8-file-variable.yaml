@@ -1,4 +1,4 @@
-- name: calling variables from a file
+- name: Declaring variables from a file
   hosts: localhost
   vars_files:
   - vars.yaml

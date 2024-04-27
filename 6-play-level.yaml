@@ -1,4 +1,4 @@
-- name: Play Level variable
+- name: Declaring variable at Play Level 
   hosts: localhost
   vars:
     course: Ansible

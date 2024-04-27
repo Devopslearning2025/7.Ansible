@@ -1,4 +1,4 @@
-- name: Writing inventory level variable
+- name: Declaring variable at inventory level 
   hosts: localhost
   tasks:
     - name: printing info

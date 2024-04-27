@@ -1,4 +1,4 @@
-- name: Variable value from prompt
+- name: Declaring Variable value at prompt
   hosts: localhost
   vars_prompt:
   - name:  USERNAME
