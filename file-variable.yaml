@@ -1,6 +1,6 @@
 - name: calling variables from a file
   hosts: locahost
-  var_files:
+  vars_files:
   - vars.yaml
   tasks:
     - name: Printing variables values using file variables
