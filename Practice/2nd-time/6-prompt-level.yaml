@@ -9,6 +9,7 @@
     private: true
   - name: occupation
     prompt: Enter user oaacupation
+    private: false
   tasks:
     - name: Printing info from User Prompt
       debug:
