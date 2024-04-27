@@ -1,5 +1,5 @@
 - name: calling variables from a file
-  hosts: locahost
+  hosts: localhost
   vars_files:
   - vars.yaml
   tasks:
