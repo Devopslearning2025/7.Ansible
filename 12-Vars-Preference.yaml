@@ -1,0 +1,17 @@
+- name: Checking Vars Preferences
+  hosts: localhost
+  vars:
+    Name: Ramesh
+    Wishes: Morning from Play Level
+  vars_files:
+  -  vars_yaml    
+  vars_prompt:
+  - name: Wishes
+    prompt: Enter your name
+    private: false
+  tasks:
+    - name: Prinigng Variable info
+      vars:
+        Wishes: Morning from task level
+      debug:
+        msg: "Hello Ramesh, Good {{Wishes}}"     

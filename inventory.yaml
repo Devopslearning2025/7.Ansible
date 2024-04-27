@@ -14,6 +14,7 @@ localhost
 Course="Devops with AWS"
 Name="Shiva"
 Duration="120"
+Wishes="Morning from Inventory"
 
 [app]
 172.31.81.183
