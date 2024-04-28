@@ -1,14 +1,13 @@
-- name: testing multi level play
+- name: Multi PLAY 1
   hosts: localhost
   tasks:
-    - name: PLAY 1 TASK 1
-      ansible.builtin.debug:
-        msg: "This is PLAY 1 TASK 1"
+    - name: PLAY ! TASK !
+      debug:
+        msg: I am TASK 1 from PLay 1
 
-- name: testing multi level play
+- name: Multi PLAY 2
   hosts: localhost
   tasks:
     - name: PLAY 2 TASK 1
-      ansible.builtin.debug:
-        msg: "This is PLAY 2 TASK 1"
-
+      debug:
+        msg: I am TASK 1 from PLay 2  
