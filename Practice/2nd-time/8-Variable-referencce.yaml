@@ -16,8 +16,6 @@
   tasks:
     - name: print the info 
       vars:
-        Name: Ramesh
-        Age: 32
         Occupation: DevOps Engineer from PLAY LEVEL
       debug:
         msg: "MY Name is {{Name}}, i am {{Age}} years old and my profession is {{Occupation}} "
