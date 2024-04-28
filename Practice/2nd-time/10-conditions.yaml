@@ -3,3 +3,4 @@
   tasks:
     - name: getting user info
       ansible.builtin.command: id ram
+      ignore_errors: true
