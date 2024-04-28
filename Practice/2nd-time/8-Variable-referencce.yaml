@@ -10,9 +10,9 @@
   - name: Name
     prompt: Enter your username
   - name: Age
-    prompt: Enter your username
+    prompt: Enter your Age
   - name: Occupation
-    prompt: Enter your username
+    prompt: Enter your Occupation 
   tasks:
     - name: print the info 
       vars:
