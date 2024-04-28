@@ -2,4 +2,4 @@
   hosts: localhost
   tasks:
     - name: getting user info
-      ansible.buitin.command: id ram
+      ansible.builtin.command: id ram
