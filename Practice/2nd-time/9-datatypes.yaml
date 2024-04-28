@@ -1,0 +1,17 @@
+- name: Declaring diff data types
+  hosts: localhost
+  vars:
+    course: Devops with AWS
+    Tools:
+    - Linux
+    - sheel
+    - Ansible
+    Experiense:
+      Devops: 3
+      AWS: 2
+      Docker: 4
+    RealProject: True
+  tasks:
+    - name: Printing info diff diff data types
+      debug:
+        msg: "{{course}}, Tools covered {{Tools}}, Experience {{Experience}}, is real projext {{RealProject}}"
