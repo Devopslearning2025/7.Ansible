@@ -4,8 +4,8 @@
     #Name: Ramesh
     #Age: 32
     #Occupation: DevOps Engineer from PLAY LEVEL
-  vars_files:
-  - files.yaml
+  #vars_files:
+  #- files.yaml
   #vars_prompt:
   #- name: Name
     #prompt: Enter your username
