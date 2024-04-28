@@ -3,4 +3,9 @@
   tasks:
     - name: getting user info
       ansible.builtin.command: id ram
-      ignore_errors: true
+      ignore_errors: true #ignoring errors
+      register: USER
+    
+    - name: Printing USER information
+      ansible.builtin.debug:
+        msg: "Getting the USER info: {{USER}}"
