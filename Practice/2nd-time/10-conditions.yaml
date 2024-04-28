@@ -9,3 +9,6 @@
     - name: Printing USER information
       ansible.builtin.debug:
         msg: "Getting the USER info: {{USER}}"
+    - name: Creating the user if not there
+      ansible.builtin.command: useradd ram
+      when: USER.rc !=0 #condition
