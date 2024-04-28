@@ -1,5 +1,6 @@
 - name: checking conditions
   hosts: localhost
+  become: yes
   tasks:
     - name: getting user info
       ansible.builtin.command: id ram
