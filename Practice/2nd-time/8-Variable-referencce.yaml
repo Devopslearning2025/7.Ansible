@@ -15,7 +15,7 @@
   #  prompt: Enter your Occupation 
   tasks:
     - name: print the info 
-      vars:
-        Occupation: DevOps Engineer from TASK LEVEL
+#      vars:
+#        Occupation: DevOps Engineer from TASK LEVEL
       debug:
         msg: "MY Name is {{Name}}, i am {{Age}} years old and my profession is {{Occupation}} "
