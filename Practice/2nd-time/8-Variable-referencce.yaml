@@ -6,13 +6,13 @@
     Occupation: DevOps Engineer from PLAY LEVEL
   vars_files:
   - files.yaml
-  vars_prompt:
-  - name: Name
-    prompt: Enter your username
-  - name: Age
-    prompt: Enter your Age
-  - name: Occupation
-    prompt: Enter your Occupation 
+  #vars_prompt:
+  #- name: Name
+    #prompt: Enter your username
+  #- name: Age
+    #prompt: Enter your Age
+  #- name: Occupation
+    #prompt: Enter your Occupation 
   tasks:
     - name: print the info 
       #vars:
