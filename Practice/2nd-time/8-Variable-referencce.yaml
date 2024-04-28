@@ -1,9 +1,9 @@
 - name: checking variable preferences
   hosts: localhost
-  vars:
-    Name: Ramesh
-    Age: 32
-    Occupation: DevOps Engineer from PLAY LEVEL
+  #vars:
+    #Name: Ramesh
+    #Age: 32
+    #Occupation: DevOps Engineer from PLAY LEVEL
   vars_files:
   - files.yaml
   #vars_prompt:
