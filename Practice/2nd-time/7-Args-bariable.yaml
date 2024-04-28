@@ -1,0 +1,13 @@
+- name: Taking variables from Arguments
+  hosts: localhost
+  vars_prompt:
+  - name: Name
+    prompt: Enter your Name
+    private: false
+  - name: occupation
+    prompt: Enter your occupation
+    private: true
+  tasks:
+    - name: Declaring variables on arguments
+      debug:
+        msg: "My name is {{Name}} and i am working as {{occupation}} Engineer" 
