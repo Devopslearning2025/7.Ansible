@@ -1,0 +1,21 @@
+- name: checking variable preferences
+  hosts: localhost
+  vars:
+    Name: Ramesh
+    Age: 32
+    Occupation: DevOps Engineer from PLAY LEVEL
+  vars_files:
+  - files.yaml
+  vars_prompt:
+  - name: Name
+    prompt: Enter your username
+  - name: Age
+    prompt: Enter your username
+  - name: Occupation
+    prompt: Enter your username
+  tasks:
+    - name: print the info 
+      vars:
+        -name : DevOps Engineer from TASK LEVEL
+      debug:
+        msg: "MY Name is {{Name}}, i am {{Age}} years old and my profession is {{Occupation}} "
