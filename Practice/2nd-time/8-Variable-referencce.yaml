@@ -16,6 +16,6 @@
   tasks:
     - name: print the info 
       vars:
-        -name: DevOps Engineer from TASK LEVEL
+        Name: DevOps Engineer from TASK LEVEL
       debug:
         msg: "MY Name is {{Name}}, i am {{Age}} years old and my profession is {{Occupation}} "
