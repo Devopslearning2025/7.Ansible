@@ -7,9 +7,9 @@
     - name: number is lessthen 10
       debug:
         msg: "The Given {{ number }} is lessthan 10"
-        when: number < 10
+      when: number < 10
     
     - name: number is greaterthan or equal to 10
       debug:
         msg: "The Given {{ number }} is greaterthan or equal to 10"
-        when: number >= 10
+      when: number >= 10
