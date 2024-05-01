@@ -15,9 +15,9 @@
   task:      
     - name: Installing the packages using loop
       dnf:
-      name: {{item}}
-      state: latest
-    loop:
-    - nginx
-    - tar
-    - gip
+        name: {{item}}
+        state: latest
+      loop:
+      - nginx
+      - tar
+      - gip
