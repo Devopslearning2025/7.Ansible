@@ -69,4 +69,4 @@
         msg: "{{ my_dictionary }}"
     - name: After converting to Dictionary
       debug:
-        msg: "{{ my_dictionary | dict2items }}"
+        msg: "{{ my_dictionary | items2dict }}"
