@@ -41,7 +41,7 @@
       debug:
         msg: "Min age: {{ ages | min }} ; Max age: {{ ages | max }} "
 
-- name: concer the dictionary to items
+- name: concert the dictionary to items
   hosts: localhost
   vars:
     my_dictionary:
@@ -53,5 +53,20 @@
       debug:
         msg: "{{ my_dictionary }}"
     - name: After converting to Items
+      debug:
+        msg: "{{ my_dictionary | dict2items }}"
+
+  - name: convert Items to dictionary
+    hosts: localhost
+    vars:
+      my_list"
+      - { "key": "course", "value": "Ansible" },
+		  - { "key": "Trainer", "value": "shiva" },
+      -  { "key": "Duration", "value": "120hours" }\
+    tasks:
+    - name: before converting to Dictionary
+      debug:
+        msg: "{{ my_dictionary }}"
+    - name: After converting to Dictionary
       debug:
         msg: "{{ my_dictionary | dict2items }}"
