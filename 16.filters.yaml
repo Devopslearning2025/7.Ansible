@@ -3,4 +3,13 @@
   tasks:
     - name: checkikng default filter
       debug:
-        msg: "Hello. I am learning {{ course | default('Ansible') }}"
+        msg: "Hello, I am learning {{ course | default('Ansible') }}"  #Assign the value using default filter
+
+- name: upper case
+  hosts: localhost
+  vars:
+    greeting: "Hello Good Morning"
+  tasks:
+    - name: convert into upper case
+      debug:
+        msg: "{{ greeting | upper }}"
