@@ -15,7 +15,7 @@
   task:      
     - name: Installing the packages using loop
       dnf:
-        name: {{item}}
+        name: {{ item }}
         state: latest
       loop:
       - nginx
