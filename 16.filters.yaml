@@ -52,3 +52,6 @@
     - name: before converting to Items
       debug:
         msg: "{{ my_dictionary }}"
+    - name: After converting to Items
+      debug:
+        msg: "{{ my_dictionary | dict2items }}"
