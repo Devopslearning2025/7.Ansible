@@ -60,8 +60,8 @@
     hosts: localhost
     vars:
       my_list:
-      - { "key": "course", "value": "Ansible" },
-		  - { "key": "Trainer", "value": "shiva" },
+      - { "key": "course", "value": "Ansible" }
+		  - { "key": "Trainer", "value": "shiva" }
       - { "key": "Duration", "value": "120hours" }
     tasks:
     - name: before converting to Dictionary
