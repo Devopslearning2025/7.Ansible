@@ -9,3 +9,15 @@
       - Solaris
       - windows
       - Unix
+- name: Install packages using loop
+  hosts: localhost
+  become: yes
+  task:      
+    - name: Installing the packages using loop
+      dnf:
+      name: {{item}}
+      state: latest
+    loop:
+    - git
+    - tar
+    - gip
