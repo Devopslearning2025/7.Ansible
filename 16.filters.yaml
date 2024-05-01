@@ -3,4 +3,4 @@
   tasks:
     - name: checkikng default filter
       debug:
-        msg: "Hello. I am learning {{ course | ('Ansible') }}"
+        msg: "Hello. I am learning {{ course | default('Ansible') }}"
