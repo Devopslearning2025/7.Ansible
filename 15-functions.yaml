@@ -1,4 +1,4 @@
-- name: 
+- name: checking the given number is lessthan otr greaterthen 
   hosts: localhost
   vars_prompt:
   - name: number

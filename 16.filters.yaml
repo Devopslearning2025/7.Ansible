@@ -1,0 +1,6 @@
+- name: default filter
+  hosts: localhost
+  tasks:
+    - name: checkikng default filter
+      debug:
+        msg: "Hello. I am learning {{ course | ('Ansible') }}"
