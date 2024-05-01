@@ -20,4 +20,4 @@
       loop:
       - nginx
       - tar
-      - gip
+      - zip
