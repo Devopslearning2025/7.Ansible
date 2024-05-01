@@ -12,7 +12,7 @@
 - name: Install packages using loop
   hosts: localhost
   become: yes
-  task:      
+  tasks:      
     - name: Installing the packages using loop
       dnf:
         name: {{ item }}
