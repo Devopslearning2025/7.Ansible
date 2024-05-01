@@ -25,7 +25,8 @@
 
 - name: remove duplicate number
   hosts: localhost
-  numbers: [1 2, 3, 4,2, 1, 3, 7, 8, 9, 8, 7]
+  vars:
+    numbers: [1 2, 3, 4,2, 1, 3, 7, 8, 9, 8, 7]
   tasks:
     - name: Removing the duplicate numbers
       debug:
