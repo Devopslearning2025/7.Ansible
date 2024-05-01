@@ -1,0 +1,11 @@
+- name: Demo on loop
+  hosts: localhost
+  tasks:
+    - name: printing the list of items from loop
+      debug:
+        msg: "Hello; {{ item }}"
+      loop:
+      - Linux
+      - Solaris
+      - windows
+      - Unix
