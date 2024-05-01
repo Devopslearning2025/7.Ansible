@@ -21,3 +21,16 @@
       - nginx
       - tar
       - zip
+
+- name: Install/uninstall packages using loop
+  hosts: localhost
+  become: yes
+  tasks:      
+    - name: Installing the packages using loop
+      dnf:
+        name: "{{item}}"
+        state: latest
+      loop:
+      - { name: nginx, state: 'absent' }
+      - { name: tar, state: 'latest' }
+      - { name: gcc, state: 'latest' }
