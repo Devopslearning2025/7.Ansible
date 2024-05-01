@@ -18,6 +18,6 @@
       name: {{item}}
       state: latest
     loop:
-    - git
+    - nginx
     - tar
     - gip
