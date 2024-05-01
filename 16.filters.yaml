@@ -31,3 +31,12 @@
     - name: Removing the duplicate numbers
       debug:
         msg: "{{ numbers | unique }}"
+
+- name: Min and max age
+  hosts: localhost
+  vars:
+    ages: [ 12, 23, 24, 65, 32]
+  tasks:
+    - name: Printing the min and max ages
+      debug:
+        msg: "Min age: {{ ages | min }} ; Max age: {{ ages | max }} "
