@@ -40,3 +40,15 @@
     - name: Printing the min and max ages
       debug:
         msg: "Min age: {{ ages | min }} ; Max age: {{ ages | max }} "
+
+- name: concer the dictionary to items
+  hosts: localhost
+  vars:
+    my_dictionary:
+      course: Ansible
+      Trainer: shiva
+      Duration: 120hours
+  tasks:
+    - name: before converting to Items
+      debug:
+        msg: "{{ my_dictionary }}"
